@@ -1,0 +1,24 @@
+Tests:
+++Parse data: pegar uns dados do GeoLife e colocar no meu local folder, pouca coisa
+++Add o Spark-client no eclipse
+++Load the data into RDD: ver se ta carregando as trajetorias certinho
+++Quadtree model construction: usando o Spark Spatial model builder, escolher os parametros, olhar no map-matching
+++CloST partitioner: ver se ta particionando corretamente, 
+++Physical planner: Hot  mode
+++Physical planner: Cold mode
+++Storage Controller: testar so o Sliding Time agora
+- Query Planner: testar se ta retornando os index certo
+- Query Planner/Stora Controller: ver se ta carregando (retrieve partitions) as particoes certo
+- Query Processor: ver se o resultado das queries tao corretos, comparar com greedy
+- Task Schedular: 
+
+Trajectory
+-HashCode as tId.2
+-Add point set the parentID of the point.
+-Fazer o oid de todos os spatial object immutable
+
+- e se na particao eu so colocar o ID da trajetoria? Deixar o trajectoryRDD
+e fazer a busca no trajectoryRDD pelos index das trajetorias...
+
+
+
